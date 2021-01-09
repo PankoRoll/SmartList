@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="4dp">
+        <TextView
+            android:id="@+id/tvMercado"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textStyle="bold"
+            android:text="Calimax"
+            android:layout_gravity="start"
+            />
+        <TextView
+            android:id="@+id/tvPrecio"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:textStyle="normal"
+            android:text="$10"
+            android:gravity="end"/>
+</LinearLayout>

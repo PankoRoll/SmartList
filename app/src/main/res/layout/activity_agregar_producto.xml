@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical"
+tools:context=".AgregarProducto"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:text="NUEVO PRODUCTO"
+         />
+
+    <ImageView
+        android:id="@+id/ivProducto"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_margin="15dp"
+ />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/lblNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NOMBRE:"
+                android:layout_marginEnd="18sp"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="251dp"
+                android:layout_height="41dp"
+                android:backgroundTint="#777777"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="start">
+            <TextView
+                android:id="@+id/lblCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANTIDAD: "
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/etCantidad"
+                android:layout_width="150dp"
+                android:layout_height="44dp"
+                android:backgroundTint="#777777"
+                android:hint="ej. 200 g"
+                android:textColor="@color/black"
+                android:textColorHint="#BBBBBB"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+        <TextView
+            android:id="@+id/lblPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp"
+            android:text="PRECIO: $"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/etPrecio"
+            android:layout_width="150dp"
+            android:layout_height="44dp"
+            android:backgroundTint="#777777"
+            android:inputType="number|numberDecimal"
+            android:hint="ej. 28.50"
+            android:textColor="@color/black"
+            android:textColorHint="#BBBBBB"
+            />
+    </LinearLayout>
+</RelativeLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+        <TextView
+            android:id="@+id/lblURL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL Imagen: "
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/etImagen"
+            android:layout_width="252dp"
+            android:layout_height="71dp"
+            android:backgroundTint="#777777"
+            android:hint="ej. https://i.imgur.com/3faSfH"
+            android:textColor="@color/black"
+            android:textColorHint="#BBBBBB"
+            />
+    </LinearLayout>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="18dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#666666"
+                android:layout_marginHorizontal="20dp"
+                android:text="CANCELAR"
+                />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:text="GUARDAR"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
